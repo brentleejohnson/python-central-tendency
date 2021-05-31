@@ -2,15 +2,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.pyplot as plt
 
-cities = ['East London', 'Cape Town', 'Kimberley', 'Durban']
-rainfall = [140,  200, 120, 157]
-x_pos = [i for i, _ in enumerate(cities)] # labels on the x-axis
+test_names = ["Jayden", "Brent", "Jason", "Yamkela", "Jason 2"]
+test_scores = [12, 99, 65, 85, 42]
+x_pos = [i for i, _ in enumerate(test_names)]    # labels on the x-axis
 # labeling and visuals
-plt.bar(x_pos, rainfall, color='green')
-plt.xlabel("cities")
-plt.ylabel("Rainfall in (mm)")
-plt.title("Rainfall for the 4 main cities in SA")
-plt.xticks(x_pos, cities)
+plt.bar(x_pos, test_scores, color='black')
+plt.xlabel("Names")
+plt.ylabel("Marks (%)")
+plt.title("Python Marks For 5 Students")
+plt.xticks(x_pos, test_names)
 plt.show()
 
 """import numpy
